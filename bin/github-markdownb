@@ -54,6 +54,7 @@ tmp.file({prefix: 'markdown-', postfix: '.html'}, function(err, tmpPath, fd, cle
   var md = new GithubMarkdown();
   md.bufmax = 2048;
   md.debug = debug;
+  md.wrap = true;
   md.render(fileName, opts, function(err) {
     if (err) {
       console.log('>>>' + err);

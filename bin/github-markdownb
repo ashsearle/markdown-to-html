@@ -31,6 +31,7 @@ tmp.file({prefix: 'markdown-', postfix: '.html'}, function(err, tmpPath, fd, cle
   if (stylesheet) {
     try {
       var csscontent = fs.readFileSync(stylesheet);
+      stylesheet = path.basename(stylesheet);
       dirname = path.dirname(tmpPath);
       try {
         var cssdir = path.dirname(stylesheet);

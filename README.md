@@ -93,6 +93,12 @@ May be abbreviated `-h` on the command line. Defaults to `false`.
 Outputs HTML header with link element referring to the given stylesheet.
 May be abbreviated `-s` on the command line.
 
+#### `--browser <browser-name>`
+
+Opens the generated HTML in the given browser (by default it'll use the system's default browser).
+Note: a browser's real name may vary by platform.  e.g. this may work with just 'chrome' on Windows, but might require 'Google Chrome' on OS X.
+May be abbreviated `-b` on the command line.
+
 #### `--title <title>`
 
 Outputs HTML header with given title. Title string may include special values

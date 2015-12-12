@@ -61,7 +61,7 @@ tmp.file({prefix: 'markdown-', postfix: '.html'}, function(err, tmpPath, fd, cle
     }
     console.log('View generated HTML in browser');
     md.pipe(out);
-    open(tmpPath);
+    open(tmpPath, opts.browser);
     setTimeout(function() {
       if(cssfullpath) fs.unlinkSync(cssfullpath);
       cleanupCB();
